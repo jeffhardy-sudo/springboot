@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/gitProject.iml" filepath="$PROJECT_DIR$/.idea/gitProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serverA/serverA.iml" filepath="$PROJECT_DIR$/serverA/serverA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serverB/serverB.iml" filepath="$PROJECT_DIR$/serverB/serverB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serverC/serverC.iml" filepath="$PROJECT_DIR$/serverC/serverC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springProject/springProject.iml" filepath="$PROJECT_DIR$/springProject/springProject.iml" />
+    </modules>
+  </component>
+</project>

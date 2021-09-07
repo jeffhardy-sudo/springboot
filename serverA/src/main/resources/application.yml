@@ -2,8 +2,8 @@ server:
   port: 8761
 eureka:
   client:
-    register-with-eureka: false #??????Eureka????
-    fetch-registry: false #??Eureka?????????????
+    register-with-eureka: false
+    fetch-registry: false
   instance:
     preferIpAddress: true
     serviceUrl:

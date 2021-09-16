@@ -42,5 +42,6 @@ public class ApiTest {
         private String email;
         @ApiModelProperty(name = "生日",dataType = "String" ,notes = "生日")
         private String birthDate;
+
 }
 }

@@ -2,6 +2,9 @@ package com.example.serverc.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -27,7 +30,17 @@ public class EurkaUtil {
     @RequestMapping(value = "/test2", method = RequestMethod.POST)
     public String getBlogName2(){
         System.out.println("--------c2------------------");
-        String s1= restTemplate.postForObject("http://serverB/test1",null, String.class);
+        String s1= restTemplate.postForObject("http://PROVIDER-EUREKA/test1",null, String.class);
         return s1;
     }
+
+    @Configuration
+    public class MainConfig {
+        @Bean
+        @LoadBalanced
+        public RestTemplate restTemplate() {
+            return new RestTemplate();
+        }
+    }
+
 }
